@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+ @layer base {
+  body {
+    @apply font-[RaLeway];
+
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer
+  }
+ }
+ .banner {
+  background: url(../public/nphoto.png) no-repeat right center ;
+  background-size: 100% 98%;
+  
+
+ }
+ .about {
+  background: url(../public/abouts.jpg) no-repeat right center ;
+  background-size: 100% 100%;
+ }
+ .skills {
+  background: url(../public/skills.jpg) no-repeat right center ;
+  background: cover;
+ }
