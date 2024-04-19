@@ -12,9 +12,24 @@
     @apply px-4;
     @apply cursor-pointer
   }
- }
+}
+  .contentP{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+  }
+  .contentP:hover {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 0, 0.7),
+      rgba(112, 188, 255, 0.7)
+    )!important;
+  }
+ 
  .banner {
-  background: url(../public/nphoto.png) no-repeat right center ;
+  background: url(../public/pxl.jpeg) no-repeat right center ;
   background-size: 100% 98%;
   
 
@@ -25,5 +40,9 @@
  }
  .skills {
   background: url(../public/skills.jpg) no-repeat right center ;
+  background: cover;
+ }
+ .contact {
+  background: url(../public/contact.jpg) no-repeat right center ;
   background: cover;
  }
