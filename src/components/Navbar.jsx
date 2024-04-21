@@ -2,22 +2,40 @@ import React  from "react"
 import  {useState} from "react";
 import { FaBars, FaTimes, FaFacebook, FaInstagram, FaGithub} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
+import { Link } from 'react-scroll';
 const Navbar =() => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
   return (
-    <div className="fixed w-full h-[80px] flex items-center justify-between px-4 bg-[#08111e] text-gray-300">
+    <div name='Home' className="fixed w-full h-[80px] flex items-center justify-between px-4 bg-[#08111e] text-gray-300">
         <div>
         <img src="./Logo.jpg" className="w-[50px] h-[70px]"/>
         </div>
         {/* menu */}
         <div>
             <ul className=" md:flex hidden">
-                <li>Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Work</li>
-                    <li>Contact</li>
+                <li className="uppercase text-sm font-semibold">
+                    <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+                        Home
+                     </Link></li>
+                    
+                     <li className="uppercase text-sm font-semibold">
+                    <Link to="about" smooth={true} duration={500}>
+                        About
+                     </Link></li>
+                     <li className="uppercase text-sm font-semibold">
+                    <Link to="skills" smooth={true} duration={500}>
+                        Skills
+                     </Link></li>
+                    
+                     <li className="uppercase text-sm font-semibold">
+                    <Link to="project" smooth={true} duration={500}>
+                        Project
+                     </Link></li>
+                    <li className="uppercase text-sm font-semibold">
+                    <Link to="contact" smooth={true} duration={500}>
+                       Contacts
+                     </Link></li>
                 </ul>
         </div>
         {/* hamburg */}
@@ -27,11 +45,27 @@ const Navbar =() => {
         </div>
          {/* Mobile menus */}
          <ul className={!nav ? 'hidden' : ' absolute top-0 left-0 w-full h-screen bg-[#08111e] flex flex-col justify-center items-center'}>
-                     <li className="py-6 text-1xl uppercase font-semibold ">Home</li>
-                    <li className="py-6 text-1xl uppercase font-semibold ">About</li>
-                    <li className="py-6 text-1xl uppercase font-semibold ">Skills</li>
-                    <li className="py-6 text-1xl uppercase font-semibold ">Work</li>
-                    <li className="py-6 text-1xl uppercase font-semibold ">Contact</li>
+                     
+         <li className="uppercase text-sm font-semibold">
+                    <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+                        Home
+                     </Link></li>
+                     <li className="uppercase text-sm font-semibold">
+                    <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+                        About
+                     </Link></li>
+                     <li className="uppercase text-sm font-semibold">
+                    <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+                        Skills
+                     </Link></li>
+                     <li className="uppercase text-sm font-semibold">
+                    <Link onClick={handleClick}  to="project" smooth={true} duration={500}>
+                        Project
+                     </Link></li>
+                     <li className="uppercase text-sm font-semibold">
+                    <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+                       Contacts
+                     </Link></li>
                 </ul>
          
          {/* Social icons */}

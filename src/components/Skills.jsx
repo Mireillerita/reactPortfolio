@@ -10,7 +10,7 @@ import java from '../../public/java.png';
 
 const Skills = () => {
   return (
-    <div name='skills' className="w-full h-screen skill text-black  ">
+    <div name='skills' className="w-full h-screen skill text-white bg-black  ">
         <div className="max-w-[1000px] mx-auto p-4 flex flex-col w-full h-full">
             <div>
                 <p className="text-4xl font-bold border-b-4 border-yellow-200 ">Skills</p>

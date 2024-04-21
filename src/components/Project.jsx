@@ -8,7 +8,7 @@ import CountriesApp from '../../public/countriesApp.png';
 
 const Project = () =>{
   return (
-  <div name='project' className="w-full bg-[#EEE1C6] h-screen project text-black">
+  <div name='project' className="w-full bg-[#EEE1C6]  project text-black">
     <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-centerw-full h-full">
         <div className="pb-8">
         <p className="text-4xl font-bold inline border-b-4  border-yellow-200 ">Project</p>
