@@ -6,6 +6,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaGithub,
+  FaWhatsapp,
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { Link } from 'react-scroll';
@@ -117,7 +118,7 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-black"
               href="/"
             >
-              Github <F size={30} />
+              Github <FaWhatsapp size={30} />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-pink-600 rounded-full rounded-l-none mt-2">
